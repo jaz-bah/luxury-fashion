@@ -1,0 +1,329 @@
+.pf-cart {
+  font-family: "Lato", sans-serif;
+  padding: 100px 0;
+}
+.pf-cart button {
+  font-family: inherit;
+  cursor: pointer;
+}
+.pf-cart button * {
+  cursor: inherit;
+}
+.pf-cart .pf-cart-content {
+  max-width: 905px;
+  margin: 0 auto;
+}
+.pf-cart .pf-cart-head {
+  display: flex;
+  justify-content: center;
+}
+.pf-cart .pf-cart-title {
+  font-family: "Arkhip", sans-serif;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+  color: #171717;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.pf-cart .pf-cart-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pf-cart .pf-cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+.pf-cart .pf-cart-table tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+.pf-cart .pf-cart-table th {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #171717;
+  text-align: left;
+  padding-bottom: 32px;
+}
+.pf-cart .pf-cart-table th:last-child {
+  text-align: right;
+}
+.pf-cart .pf-cart-table td {
+  padding: 32px 0;
+}
+.pf-cart .pf-cart-product {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+}
+.pf-cart .pf-product-img {
+  width: 80px;
+  aspect-ratio: 80/96;
+}
+.pf-cart .pf-product-img img {
+  -o-object-position: top;
+     object-position: top;
+}
+.pf-cart .pf-product-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.pf-cart .pf-product-name {
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 8px;
+}
+.pf-cart .pf-product-variant {
+  font-size: 12px;
+  line-height: 1.65;
+  font-weight: 400;
+  color: #737373;
+  margin-bottom: 8px;
+}
+.pf-cart .pf-product-remove {
+  margin-top: auto;
+}
+.pf-cart .pf-product-remove button {
+  display: block;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+.pf-cart .pf-cart-quantity {
+  padding: 0 16px;
+}
+.pf-cart .pf-quantity-box {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  width: 80px;
+  border: 1px solid #525252;
+  padding: 6px 4px;
+  border-radius: 4px;
+}
+.pf-cart .pf-quantity-btn {
+  width: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+.pf-cart .pf-quantity-input {
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.65;
+  font-weight: 700;
+  color: #262626;
+  pointer-events: none;
+}
+.pf-cart .pf-cart-total {
+  display: flex;
+  justify-content: flex-end;
+}
+.pf-cart .pf-total-price {
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 700;
+  color: #262626;
+}
+.pf-cart .pf-cart-continueBtn {
+  margin-bottom: 40px;
+}
+.pf-cart .pf-cart-continueBtn a {
+  display: inline-flex;
+  align-items: center;
+  background: #737373;
+  border: 1px solid #d4d4d4;
+  color: #fff;
+  padding: 14px 16px;
+  gap: 6px;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  transition: 300ms ease;
+}
+.pf-cart .pf-cart-continueBtn a:hover {
+  background: #525252;
+}
+.pf-cart .pf-cart-footer {
+  background: #f5f5f5;
+  padding: 24px 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.pf-cart .pf-cart-note {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+}
+.pf-cart .pf-cart-note label {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #141718;
+  margin-bottom: 13px;
+}
+.pf-cart .pf-cart-note textarea {
+  font-family: inherit;
+  min-height: 136px;
+  height: 100%;
+  background: none;
+  border: 1px solid #d4d4d4;
+  outline: none;
+  resize: none;
+  cursor: text;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.pf-cart .pf-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+}
+.pf-cart .pf-summary-item:not(:last-child) {
+  border-bottom: 1px solid #eaeaea;
+}
+.pf-cart .pf-summary-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #141718;
+}
+.pf-cart .pf-summary-item p:last-child {
+  text-align: right;
+  font-weight: 700;
+}
+.pf-cart .pf-summary-item h3 {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #171717;
+}
+.pf-cart .pf-summary-item h3:last-child {
+  text-align: right;
+}
+.pf-cart .pf-cart-checkoutBtn {
+  margin-top: 32px;
+}
+.pf-cart .pf-cart-checkoutBtn a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #171717;
+  font-size: 18px;
+  line-height: 1.75;
+  font-weight: 700;
+  padding: 10px;
+}
+@media screen and (max-width: 1199px) {
+  .pf-cart .pf-cart-title {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pf-cart .pf-cart-footer {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pf-cart {
+    padding: 80px 0;
+  }
+  .pf-cart .pf-cart-title {
+    font-size: 36px;
+  }
+  .pf-cart .pf-cart-footer {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .pf-cart .pf-cart-note {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pf-cart {
+    padding: 60px 0;
+  }
+  .pf-cart .pf-cart-title {
+    font-size: 32px;
+  }
+  .pf-cart .pf-cart-table {
+    margin-bottom: 32px;
+  }
+  .pf-cart .pf-cart-table th {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .pf-cart .pf-cart-table td {
+    padding: 20px 0;
+  }
+  .pf-cart .pf-cart-product {
+    gap: 8px;
+  }
+  .pf-cart .pf-product-img {
+    width: 60px;
+    aspect-ratio: 60/72;
+  }
+  .pf-cart .pf-cart-quantity {
+    padding: 0 12px;
+  }
+  .pf-cart .pf-quantity-box {
+    width: 72px;
+    padding: 4px 2px;
+  }
+  .pf-cart .pf-cart-continueBtn {
+    margin-bottom: 32px;
+  }
+  .pf-cart .pf-cart-continueBtn a {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+  .pf-cart .pf-cart-continueBtn a svg {
+    width: 14px;
+    height: 14px;
+  }
+  .pf-cart .pf-cart-footer {
+    padding: 16px;
+    gap: 20px;
+  }
+  .pf-cart .pf-cart-note label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .pf-cart .pf-summary-item {
+    padding: 10px 0;
+  }
+  .pf-cart .pf-summary-item p {
+    font-size: 15px;
+  }
+  .pf-cart .pf-summary-item h3 {
+    font-size: 18px;
+  }
+  .pf-cart .pf-cart-checkoutBtn {
+    margin-top: 20px;
+  }
+  .pf-cart .pf-cart-checkoutBtn a {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=cart-page.css.map */

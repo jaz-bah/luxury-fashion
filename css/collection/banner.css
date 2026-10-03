@@ -1,0 +1,48 @@
+.pf-collection-banner .pf-banner-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.pf-collection-banner .pf-banner-img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.pf-collection-banner .pf-banner-content {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 80px 20px;
+  min-height: 535px;
+  display: grid;
+  place-items: center;
+}
+.pf-collection-banner .pf-banner-title {
+  font-family: "Arkhip", sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 1399px) {
+  .pf-collection-banner .pf-banner-content {
+    min-height: 400px;
+  }
+  .pf-collection-banner .pf-banner-title {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pf-collection-banner .pf-banner-content {
+    min-height: 360px;
+  }
+  .pf-collection-banner .pf-banner-title {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pf-collection-banner .pf-banner-content {
+    min-height: 300px;
+  }
+  .pf-collection-banner .pf-banner-title {
+    font-size: 36px;
+  }
+}/*# sourceMappingURL=banner.css.map */

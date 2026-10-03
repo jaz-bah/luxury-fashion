@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Drawer | Luxury Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/SC-global-style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/announcement.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/cart/cart-page.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/pjax@VERSION/pjax.min.js"></script>
+    
+    <script src="./js/jquery.pjax.js"></script>
+
+  </head>
+  <body  id="pjax-container">
+    <div class="pf-announcement">
+      <div class="pf-announcement-wrapper">
+        <div class="pf-container">
+          <div class="pf-announcement-content">
+            <p class="pf-announcement-text">
+              Get 20% off to your first order. <a href="#">SHOP NOW</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="pf-header">
+      <div class="pf-header-wrapper">
+        <div class="pf-container">
+          <div class="pf-header-navbar">
+            <button class="pf-navbar-toggle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"
+                ></path>
+              </svg>
+            </button>
+            <!-- HEADER NAVBAR START -->
+            <div class="pf-navbar-container">
+              <div class="pf-navbar-overlay"></div>
+              <div class="pf-navbar-card">
+                <div class="pf-navbar-head">
+                  <div class="pf-navheader-logo">
+                    <div class="pf-imgbox">
+                      <img src="./img/logo.svg" alt="" />
+                    </div>
+                  </div>
+                  <button class="pf-navbar-close">
+                    <svg
+                      width="10"
+                      height="11"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 9.5L9 1.5M1 1.5L9 9.5"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="pf-navbar-menu">
+                  <ul class="pf-menu-list">
+                    <li class="pf-menu-item">
+                      <a class="pf-menu-link" href="#"
+                        >Women
+                        <svg
+                          width="12"
+                          height="8"
+                          viewBox="0 0 12 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 1.5L6 6.5L1 1.5"
+                            stroke="#262626"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                      <div class="pf-navbar-megamenu">
+                        <div class="pf-container">
+                          <div class="pf-megamenu-content">
+                            <div class="pf-megamenu-row">
+                              <!-- Column 01 -->
+                              <div class="pf-megamenu-col">
+                                <div class="pf-navbar-submenu">
+                                  <h3 class="pf-submenu-title">Clothing</h3>
+                                  <ul class="pf-submenu-list">
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Dresses</a
+                                      >
+                                    </li>
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Coats & Jackets</a
+                                      >
+                                    </li>
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Tops & Blouses</a
+                                      >
+                                    </li>
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Pants & Skirts</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <!-- Column 02 -->
+                              <div class="pf-megamenu-col">
+                                <div class="pf-navbar-submenu">
+                                  <h3 class="pf-submenu-title">Shoes</h3>
+                                  <ul class="pf-submenu-list">
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Heels</a
+                                      >
+                                    </li>
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Flats</a
+                                      >
+                                    </li>
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Boots</a
+                                      >
+                                    </li>
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Classic</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <!-- Column 03 -->
+                              <div class="pf-megamenu-col">
+                                <div class="pf-navbar-submenu">
+                                  <h3 class="pf-submenu-title">Accessories</h3>
+                                  <ul class="pf-submenu-list">
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Bags</a
+                                      >
+                                    </li>
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Scarves</a
+                                      >
+                                    </li>
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Hat</a
+                                      >
+                                    </li>
+                                    <li class="pf-submenu-item">
+                                      <a class="pf-submenu-link" href="#"
+                                        >Sunglasses</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <!-- Column 04 -->
+                              <div class="pf-megamenu-col pf-megamenu-banner">
+                                <div class="pf-megamenu-img">
+                                  <div class="pf-imgbox_full">
+                                    <img
+                                      src="./img/megamenu-banner.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Column End -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pf-menu-item">
+                      <a class="pf-menu-link" href="/about.html">
+                        About Us
+                      </a>
+                    </li>
+                    <li class="pf-menu-item">
+                      <a class="pf-menu-link" href="/account.html">
+                        Account
+                      </a>
+                    </li>
+                    <li class="pf-menu-item">
+                      <a class="pf-menu-link" href="/blog.html">
+                        Blog
+                      </a>
+                    </li>
+                    <li class="pf-menu-item">
+                      <a class="pf-menu-link" href="/cart.html">
+                        Cart
+                      </a>
+                    </li>
+                    <li class="pf-menu-item">
+                      <a class="pf-menu-link" href="/collection-list.html">
+                        Collection List
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- HEADER NAVBAR END -->
+            <div class="pf-header-logo">
+              <a href="#">
+                <div class="pf-imgbox">
+                  <img src="./img/logo.svg" alt="" />
+                </div>
+              </a>
+            </div>
+            <!-- HEADER ACTION START -->
+            <div class="pf-header-action">
+              <div class="pf-action-item pf-action-search">
+                <div class="pf-search-box">
+                  <div class="pf-search-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 19L15.5001 15.5M18 9.5C18 14.1944 14.1944 18 9.5 18C4.80558 18 1 14.1944 1 9.5C1 4.80558 4.80558 1 9.5 1C14.1944 1 18 4.80558 18 9.5Z"
+                        stroke="#262626"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="pf-search-label">Search</p>
+                </div>
+                <div class="pf-search-popup">
+                  <div class="pf-container">
+                    <div class="pf-spopup-wrapper">
+                      <button class="pf-spopup-close">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15 1L1 15M1 1L15 15"
+                            stroke="#262626"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                      <div class="pf-spopup-content">
+                        <form class="pf-spopup-form">
+                          <div class="pf-spopup-search">
+                            <input
+                              class="pf-spopup-input"
+                              type="text"
+                              placeholder="Search..."
+                              required
+                            />
+                            <button class="pf-spopup-btn">
+                              <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M13.0005 13.0005L9.53585 9.53585M9.53585 9.53585C10.4736 8.59814 11.0004 7.32632 11.0004 6.00019C11.0004 4.67406 10.4736 3.40224 9.53585 2.46452C8.59814 1.5268 7.32632 1 6.00019 1C4.67406 1 3.40224 1.5268 2.46452 2.46452C1.5268 3.40224 1 4.67406 1 6.00019C1 7.32632 1.5268 8.59814 2.46452 9.53585C3.40224 10.4736 4.67406 11.0004 6.00019 11.0004C7.32632 11.0004 8.59814 10.4736 9.53585 9.53585Z"
+                                  stroke="#525252"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="pf-search-suggestions">
+                            <ul class="pf-suggestions-list">
+                              <li class="pf-suggestions-item">Women</li>
+                              <li class="pf-suggestions-item">Pant</li>
+                              <li class="pf-suggestions-item">Saree</li>
+                              <li class="pf-suggestions-item">T shirt</li>
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
+                      <button class="pf-spopup-clear">Clear</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-action-item pf-action-cart">
+                <button class="pf-action-btn">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.9984 9V6C15.9984 3.79086 14.2076 2 11.9984 2C9.78928 2 7.99842 3.79086 7.99842 6V9M3.59042 10.352L2.99042 16.752C2.81982 18.5717 2.73452 19.4815 3.03647 20.1843C3.30171 20.8016 3.76653 21.3121 4.35643 21.6338C5.02794 22 5.94178 22 7.76946 22H16.2274C18.055 22 18.9689 22 19.6404 21.6338C20.2303 21.3121 20.6951 20.8016 20.9604 20.1843C21.2623 19.4815 21.177 18.5717 21.0064 16.752L20.4064 10.352C20.2624 8.81535 20.1903 8.04704 19.8448 7.46616C19.5404 6.95458 19.0908 6.54511 18.553 6.28984C17.9424 6 17.1707 6 15.6274 6L8.36946 6C6.82611 6 6.05443 6 5.44383 6.28984C4.90608 6.54511 4.45642 6.95458 4.15208 7.46616C3.80651 8.04704 3.73448 8.81534 3.59042 10.352Z"
+                      stroke="#262626"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div class="pf-cart-popup">
+                  <div class="pf-cartpop-wrapper">
+                    <div class="pf-cartpop-head">
+                      <h3 class="pf-cartpop-title">Cart (3)</h3>
+                    </div>
+                    <div class="pf-cartpop-body">
+                      <div class="pf-cartpop-list">
+                        <!-- Item 01 -->
+                        <div class="pf-cartpop-item">
+                          <a href="#" class="pf-cartpop-img">
+                            <div class="pf-imgbox_full">
+                              <img src="./img/products/product-11.jpg" alt="" />
+                            </div>
+                          </a>
+                          <div class="pf-cartpop-content">
+                            <div class="pf-text-wrapper">
+                              <div class="pf-text-box">
+                                <a
+                                  href="#"
+                                  class="pf-body-font pf-cartpop-name"
+                                >
+                                  Tulle Long Prom Dress
+                                </a>
+                                <p class="pf-body-font pf-cartpop-variant">
+                                  Color: Black
+                                </p>
+                                <p class="pf-body-font pf-cartpop-price">
+                                  $38.00
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pf-cartpop-removeBtn">
+                            <button>
+                              <svg
+                                width="17"
+                                height="16"
+                                viewBox="0 0 17 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M15.5 1L1.5 15M1.5 1L15.5 15"
+                                  stroke="#262626"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- Item 02 -->
+                        <div class="pf-cartpop-item">
+                          <a href="#" class="pf-cartpop-img">
+                            <div class="pf-imgbox_full">
+                              <img src="./img/products/product-12.jpg" alt="" />
+                            </div>
+                          </a>
+                          <div class="pf-cartpop-content">
+                            <div class="pf-text-wrapper">
+                              <div class="pf-text-box">
+                                <a
+                                  href="#"
+                                  class="pf-body-font pf-cartpop-name"
+                                >
+                                  Tulle Long Prom Dress
+                                </a>
+                                <p class="pf-body-font pf-cartpop-variant">
+                                  Color: Black
+                                </p>
+                                <p class="pf-body-font pf-cartpop-price">
+                                  $38.00
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pf-cartpop-removeBtn">
+                            <button>
+                              <svg
+                                width="17"
+                                height="16"
+                                viewBox="0 0 17 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M15.5 1L1.5 15M1.5 1L15.5 15"
+                                  stroke="#262626"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- Item 03 -->
+                        <div class="pf-cartpop-item">
+                          <a href="#" class="pf-cartpop-img">
+                            <div class="pf-imgbox_full">
+                              <img src="./img/products/product-13.jpg" alt="" />
+                            </div>
+                          </a>
+                          <div class="pf-cartpop-content">
+                            <div class="pf-text-wrapper">
+                              <div class="pf-text-box">
+                                <a
+                                  href="#"
+                                  class="pf-body-font pf-cartpop-name"
+                                >
+                                  Tulle Long Prom Dress
+                                </a>
+                                <p class="pf-body-font pf-cartpop-variant">
+                                  Color: Black
+                                </p>
+                                <p class="pf-body-font pf-cartpop-price">
+                                  $38.00
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pf-cartpop-removeBtn">
+                            <button>
+                              <svg
+                                width="17"
+                                height="16"
+                                viewBox="0 0 17 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M15.5 1L1.5 15M1.5 1L15.5 15"
+                                  stroke="#262626"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- Item End -->
+                      </div>
+                    </div>
+                    <div class="pf-cartpop-foot">
+                      <div class="pf-cartpop-summary">
+                        <div class="pf-cartpop-total">
+                          <p>Total</p>
+                          <p>$1345.00</p>
+                        </div>
+                      </div>
+                      <div class="pf-view-more pf-cartpop-btns">
+                        <button class="pf-cartpop-checkout">Checkout</button>
+                        <button class="pf-cartpop-shop">
+                          Continue Shopping
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-action-item pf-action-wishlist">
+                <button class="pf-action-btn">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1111 3C19.6333 3 22 6.3525 22 9.48C22 15.8138 12.1778 21 12 21C11.8222 21 2 15.8138 2 9.48C2 6.3525 4.36667 3 7.88889 3C9.91111 3 11.2333 4.02375 12 4.92375C12.7667 4.02375 14.0889 3 16.1111 3Z"
+                      stroke="#262626"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="pf-action-item pf-action-account">
+                <button class="pf-action-btn">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z"
+                      stroke="#262626"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- HEADER ACTION END -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="pf-cart">
+        <div class="pf-container">
+          <div class="pf-cart-content">
+            <div class="pf-cart-head">
+              <div class="pf-text-wrapper">
+                <div class="pf-text-box">
+                  <h1 class="pf-heading-font pf-cart-title">
+                    your shopping cart
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="pf-cart-body">
+              <table class="pf-cart-table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Item 01 -->
+                  <tr>
+                    <td>
+                      <div class="pf-cart-product">
+                        <div class="pf-product-img">
+                          <div class="pf-imgbox_full">
+                            <img src="./img/cart-product.jpg" alt="" />
+                          </div>
+                        </div>
+                        <div class="pf-product-text">
+                          <div class="pf-text-wrapper">
+                            <div class="pf-text-box">
+                              <h3 class="pf-heading-font pf-product-name">
+                                Tulle Long Prom Dress
+                              </h3>
+                              <p class="pf-body-font pf-product-variant">
+                                Color: Black
+                              </p>
+                            </div>
+                          </div>
+                          <div class="pf-view-more pf-product-remove">
+                            <button>
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M17.4991 5.60937C17.4824 5.60937 17.4574 5.60937 17.4324 5.60937C13.0241 5.1677 8.62408 5.00104 4.26574 5.4427L2.56574 5.60937C2.21574 5.6427 1.90741 5.3927 1.87408 5.0427C1.84074 4.6927 2.09074 4.3927 2.43241 4.35937L4.13241 4.1927C8.56574 3.7427 13.0574 3.9177 17.5574 4.35937C17.8991 4.3927 18.1491 4.70104 18.1157 5.0427C18.0907 5.3677 17.8157 5.60937 17.4991 5.60937Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M7.08265 4.76406C7.04932 4.76406 7.01598 4.76406 6.97432 4.75573C6.64098 4.6974 6.40765 4.3724 6.46598 4.03906L6.64932 2.9474C6.78265 2.1474 6.96598 1.03906 8.90765 1.03906H11.091C13.041 1.03906 13.2243 2.18906 13.3493 2.95573L13.5326 4.03906C13.591 4.38073 13.3576 4.70573 13.0243 4.75573C12.6826 4.81406 12.3576 4.58073 12.3076 4.2474L12.1243 3.16406C12.0076 2.43906 11.9826 2.2974 11.0993 2.2974H8.91598C8.03265 2.2974 8.01598 2.41406 7.89098 3.15573L7.69932 4.23906C7.64932 4.5474 7.38265 4.76406 7.08265 4.76406Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M12.674 18.9596H7.32402C4.41569 18.9596 4.29902 17.3513 4.20735 16.0513L3.66569 7.65962C3.64069 7.31795 3.90735 7.01795 4.24902 6.99295C4.59902 6.97628 4.89069 7.23462 4.91569 7.57628L5.45735 15.9679C5.54902 17.2346 5.58235 17.7096 7.32402 17.7096H12.674C14.424 17.7096 14.4574 17.2346 14.5407 15.9679L15.0824 7.57628C15.1074 7.23462 15.4074 6.97628 15.749 6.99295C16.0907 7.01795 16.3574 7.30962 16.3324 7.65962L15.7907 16.0513C15.699 17.3513 15.5824 18.9596 12.674 18.9596Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M11.3844 14.375H8.60938C8.26771 14.375 7.98438 14.0917 7.98438 13.75C7.98438 13.4083 8.26771 13.125 8.60938 13.125H11.3844C11.726 13.125 12.0094 13.4083 12.0094 13.75C12.0094 14.0917 11.726 14.375 11.3844 14.375Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M12.0846 11.0391H7.91797C7.5763 11.0391 7.29297 10.7557 7.29297 10.4141C7.29297 10.0724 7.5763 9.78906 7.91797 9.78906H12.0846C12.4263 9.78906 12.7096 10.0724 12.7096 10.4141C12.7096 10.7557 12.4263 11.0391 12.0846 11.0391Z"
+                                  fill="#525252"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pf-cart-quantity">
+                        <div class="pf-quantity-box">
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="11"
+                              height="2"
+                              viewBox="0 0 11 2"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.23047 1H10.5638"
+                                stroke="#262626"
+                                stroke-width="0.75"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="pf-quantity-input"
+                            value="1"
+                          />
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.3737 1.33594C6.3737 1.12883 6.2058 0.960938 5.9987 0.960938C5.79159 0.960938 5.6237 1.12883 5.6237 1.33594V5.6276H1.33203C1.12492 5.6276 0.957031 5.7955 0.957031 6.0026C0.957031 6.20971 1.12492 6.3776 1.33203 6.3776H5.6237V10.6693C5.6237 10.8764 5.79159 11.0443 5.9987 11.0443C6.2058 11.0443 6.3737 10.8764 6.3737 10.6693V6.3776H10.6654C10.8725 6.3776 11.0404 6.20971 11.0404 6.0026C11.0404 5.7955 10.8725 5.6276 10.6654 5.6276H6.3737V1.33594Z"
+                                fill="#262626"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pf-cart-total">
+                        <div class="pf-text-wrapper">
+                          <div class="pf-text-box">
+                            <p class="pf-body-font pf-total-price">$38.00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- Item 02 -->
+                  <tr>
+                    <td>
+                      <div class="pf-cart-product">
+                        <div class="pf-product-img">
+                          <div class="pf-imgbox_full">
+                            <img src="./img/cart-product.jpg" alt="" />
+                          </div>
+                        </div>
+                        <div class="pf-product-text">
+                          <div class="pf-text-wrapper">
+                            <div class="pf-text-box">
+                              <h3 class="pf-heading-font pf-product-name">
+                                Tulle Long Prom Dress
+                              </h3>
+                              <p class="pf-body-font pf-product-variant">
+                                Color: Black
+                              </p>
+                            </div>
+                          </div>
+                          <div class="pf-view-more pf-product-remove">
+                            <button>
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M17.4991 5.60937C17.4824 5.60937 17.4574 5.60937 17.4324 5.60937C13.0241 5.1677 8.62408 5.00104 4.26574 5.4427L2.56574 5.60937C2.21574 5.6427 1.90741 5.3927 1.87408 5.0427C1.84074 4.6927 2.09074 4.3927 2.43241 4.35937L4.13241 4.1927C8.56574 3.7427 13.0574 3.9177 17.5574 4.35937C17.8991 4.3927 18.1491 4.70104 18.1157 5.0427C18.0907 5.3677 17.8157 5.60937 17.4991 5.60937Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M7.08265 4.76406C7.04932 4.76406 7.01598 4.76406 6.97432 4.75573C6.64098 4.6974 6.40765 4.3724 6.46598 4.03906L6.64932 2.9474C6.78265 2.1474 6.96598 1.03906 8.90765 1.03906H11.091C13.041 1.03906 13.2243 2.18906 13.3493 2.95573L13.5326 4.03906C13.591 4.38073 13.3576 4.70573 13.0243 4.75573C12.6826 4.81406 12.3576 4.58073 12.3076 4.2474L12.1243 3.16406C12.0076 2.43906 11.9826 2.2974 11.0993 2.2974H8.91598C8.03265 2.2974 8.01598 2.41406 7.89098 3.15573L7.69932 4.23906C7.64932 4.5474 7.38265 4.76406 7.08265 4.76406Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M12.674 18.9596H7.32402C4.41569 18.9596 4.29902 17.3513 4.20735 16.0513L3.66569 7.65962C3.64069 7.31795 3.90735 7.01795 4.24902 6.99295C4.59902 6.97628 4.89069 7.23462 4.91569 7.57628L5.45735 15.9679C5.54902 17.2346 5.58235 17.7096 7.32402 17.7096H12.674C14.424 17.7096 14.4574 17.2346 14.5407 15.9679L15.0824 7.57628C15.1074 7.23462 15.4074 6.97628 15.749 6.99295C16.0907 7.01795 16.3574 7.30962 16.3324 7.65962L15.7907 16.0513C15.699 17.3513 15.5824 18.9596 12.674 18.9596Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M11.3844 14.375H8.60938C8.26771 14.375 7.98438 14.0917 7.98438 13.75C7.98438 13.4083 8.26771 13.125 8.60938 13.125H11.3844C11.726 13.125 12.0094 13.4083 12.0094 13.75C12.0094 14.0917 11.726 14.375 11.3844 14.375Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M12.0846 11.0391H7.91797C7.5763 11.0391 7.29297 10.7557 7.29297 10.4141C7.29297 10.0724 7.5763 9.78906 7.91797 9.78906H12.0846C12.4263 9.78906 12.7096 10.0724 12.7096 10.4141C12.7096 10.7557 12.4263 11.0391 12.0846 11.0391Z"
+                                  fill="#525252"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pf-cart-quantity">
+                        <div class="pf-quantity-box">
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="11"
+                              height="2"
+                              viewBox="0 0 11 2"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.23047 1H10.5638"
+                                stroke="#262626"
+                                stroke-width="0.75"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="pf-quantity-input"
+                            value="1"
+                          />
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.3737 1.33594C6.3737 1.12883 6.2058 0.960938 5.9987 0.960938C5.79159 0.960938 5.6237 1.12883 5.6237 1.33594V5.6276H1.33203C1.12492 5.6276 0.957031 5.7955 0.957031 6.0026C0.957031 6.20971 1.12492 6.3776 1.33203 6.3776H5.6237V10.6693C5.6237 10.8764 5.79159 11.0443 5.9987 11.0443C6.2058 11.0443 6.3737 10.8764 6.3737 10.6693V6.3776H10.6654C10.8725 6.3776 11.0404 6.20971 11.0404 6.0026C11.0404 5.7955 10.8725 5.6276 10.6654 5.6276H6.3737V1.33594Z"
+                                fill="#262626"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pf-cart-total">
+                        <div class="pf-text-wrapper">
+                          <div class="pf-text-box">
+                            <p class="pf-body-font pf-total-price">$38.00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- Item 03 -->
+                  <tr>
+                    <td>
+                      <div class="pf-cart-product">
+                        <div class="pf-product-img">
+                          <div class="pf-imgbox_full">
+                            <img src="./img/cart-product.jpg" alt="" />
+                          </div>
+                        </div>
+                        <div class="pf-product-text">
+                          <div class="pf-text-wrapper">
+                            <div class="pf-text-box">
+                              <h3 class="pf-heading-font pf-product-name">
+                                Tulle Long Prom Dress
+                              </h3>
+                              <p class="pf-body-font pf-product-variant">
+                                Color: Black
+                              </p>
+                            </div>
+                          </div>
+                          <div class="pf-view-more pf-product-remove">
+                            <button>
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M17.4991 5.60937C17.4824 5.60937 17.4574 5.60937 17.4324 5.60937C13.0241 5.1677 8.62408 5.00104 4.26574 5.4427L2.56574 5.60937C2.21574 5.6427 1.90741 5.3927 1.87408 5.0427C1.84074 4.6927 2.09074 4.3927 2.43241 4.35937L4.13241 4.1927C8.56574 3.7427 13.0574 3.9177 17.5574 4.35937C17.8991 4.3927 18.1491 4.70104 18.1157 5.0427C18.0907 5.3677 17.8157 5.60937 17.4991 5.60937Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M7.08265 4.76406C7.04932 4.76406 7.01598 4.76406 6.97432 4.75573C6.64098 4.6974 6.40765 4.3724 6.46598 4.03906L6.64932 2.9474C6.78265 2.1474 6.96598 1.03906 8.90765 1.03906H11.091C13.041 1.03906 13.2243 2.18906 13.3493 2.95573L13.5326 4.03906C13.591 4.38073 13.3576 4.70573 13.0243 4.75573C12.6826 4.81406 12.3576 4.58073 12.3076 4.2474L12.1243 3.16406C12.0076 2.43906 11.9826 2.2974 11.0993 2.2974H8.91598C8.03265 2.2974 8.01598 2.41406 7.89098 3.15573L7.69932 4.23906C7.64932 4.5474 7.38265 4.76406 7.08265 4.76406Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M12.674 18.9596H7.32402C4.41569 18.9596 4.29902 17.3513 4.20735 16.0513L3.66569 7.65962C3.64069 7.31795 3.90735 7.01795 4.24902 6.99295C4.59902 6.97628 4.89069 7.23462 4.91569 7.57628L5.45735 15.9679C5.54902 17.2346 5.58235 17.7096 7.32402 17.7096H12.674C14.424 17.7096 14.4574 17.2346 14.5407 15.9679L15.0824 7.57628C15.1074 7.23462 15.4074 6.97628 15.749 6.99295C16.0907 7.01795 16.3574 7.30962 16.3324 7.65962L15.7907 16.0513C15.699 17.3513 15.5824 18.9596 12.674 18.9596Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M11.3844 14.375H8.60938C8.26771 14.375 7.98438 14.0917 7.98438 13.75C7.98438 13.4083 8.26771 13.125 8.60938 13.125H11.3844C11.726 13.125 12.0094 13.4083 12.0094 13.75C12.0094 14.0917 11.726 14.375 11.3844 14.375Z"
+                                  fill="#525252"
+                                />
+                                <path
+                                  d="M12.0846 11.0391H7.91797C7.5763 11.0391 7.29297 10.7557 7.29297 10.4141C7.29297 10.0724 7.5763 9.78906 7.91797 9.78906H12.0846C12.4263 9.78906 12.7096 10.0724 12.7096 10.4141C12.7096 10.7557 12.4263 11.0391 12.0846 11.0391Z"
+                                  fill="#525252"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pf-cart-quantity">
+                        <div class="pf-quantity-box">
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="11"
+                              height="2"
+                              viewBox="0 0 11 2"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.23047 1H10.5638"
+                                stroke="#262626"
+                                stroke-width="0.75"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="pf-quantity-input"
+                            value="1"
+                          />
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.3737 1.33594C6.3737 1.12883 6.2058 0.960938 5.9987 0.960938C5.79159 0.960938 5.6237 1.12883 5.6237 1.33594V5.6276H1.33203C1.12492 5.6276 0.957031 5.7955 0.957031 6.0026C0.957031 6.20971 1.12492 6.3776 1.33203 6.3776H5.6237V10.6693C5.6237 10.8764 5.79159 11.0443 5.9987 11.0443C6.2058 11.0443 6.3737 10.8764 6.3737 10.6693V6.3776H10.6654C10.8725 6.3776 11.0404 6.20971 11.0404 6.0026C11.0404 5.7955 10.8725 5.6276 10.6654 5.6276H6.3737V1.33594Z"
+                                fill="#262626"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="pf-cart-total">
+                        <div class="pf-text-wrapper">
+                          <div class="pf-text-box">
+                            <p class="pf-body-font pf-total-price">$38.00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- Item End -->
+                </tbody>
+              </table>
+              <div class="pf-view-more pf-cart-continueBtn">
+                <a href="#">
+                  Continue Shopping
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.4149 1.80719H1.13893V0H16.5V15.3611H14.6928V3.08506L1.77787 16L0.5 14.7222L13.4149 1.80719Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="pf-cart-footer">
+              <div class="pf-cart-note">
+                <label>Add Note</label>
+                <textarea></textarea>
+              </div>
+              <div class="pf-cart-summary">
+                <div class="pf-summary-list">
+                  <div class="pf-summary-item">
+                    <p>Subtotal</p>
+                    <p>$114.00</p>
+                  </div>
+                  <div class="pf-summary-item">
+                    <h3>Total</h3>
+                    <h3>$1345.00</h3>
+                  </div>
+                </div>
+                <div class="pf-view-more pf-cart-checkoutBtn">
+                  <a href="#"> Checkout </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

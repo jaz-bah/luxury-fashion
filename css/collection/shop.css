@@ -1,0 +1,298 @@
+.pf-shop {
+  font-family: "Lato", sans-serif;
+  padding: 100px 0;
+  background: #fff;
+}
+.pf-shop img {
+  display: block;
+}
+.pf-shop a,
+.pf-shop button {
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+.pf-shop a *,
+.pf-shop button * {
+  cursor: inherit;
+}
+.pf-shop .pf-shop-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+}
+.pf-shop .pf-filter-content {
+  max-width: 262px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.pf-shop .pf-filter-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pf-shop .pf-filter-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #262626;
+}
+.pf-shop .pf-filter-close {
+  display: none;
+}
+.pf-shop .pf-filter-close button {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border: none;
+  background: none;
+}
+.pf-shop .pf-filter-close button svg {
+  width: 100%;
+  height: 100%;
+}
+.pf-shop .pf-filter-name {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #262626;
+  margin-bottom: 12px;
+}
+.pf-shop .pf-filter-scroll {
+  max-height: 262px;
+  overflow-y: auto;
+}
+.pf-shop .pf-filter-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.pf-shop .pf-filter-scroll::-webkit-scrollbar-track {
+  background: #d4d4d4;
+  border-radius: 10px;
+}
+.pf-shop .pf-filter-scroll::-webkit-scrollbar-thumb {
+  background: #737373;
+  border-radius: 10px;
+}
+.pf-shop .pf-filter-list {
+  padding-bottom: 10px;
+  padding-right: 8px;
+}
+.pf-shop .pf-filter-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pf-shop .pf-filter-list ul li a {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 2px 0;
+  font-weight: 600;
+  color: #737373;
+  border-bottom: 1px solid transparent;
+  transition: 300ms ease;
+}
+.pf-shop .pf-filter-list ul li a.pf-active {
+  color: #262626;
+  border-color: #262626;
+}
+.pf-shop .pf-filter-checkboxes {
+  padding-bottom: 10px;
+  padding-right: 8px;
+}
+.pf-shop .pf-filter-checkboxes ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pf-shop .pf-filter-checkboxes ul li label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 600;
+  color: #737373;
+  cursor: pointer;
+}
+.pf-shop .pf-filter-checkboxes ul li label * {
+  cursor: inherit;
+}
+.pf-shop .pf-filter-checkboxes ul li label input {
+  display: none;
+}
+.pf-shop .pf-filter-checkboxes ul li label span {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #737373;
+  border-radius: 4px;
+  transition: 300ms ease;
+}
+.pf-shop .pf-filter-checkboxes ul li label span svg {
+  display: none;
+}
+.pf-shop .pf-filter-checkboxes ul li label input:checked + span {
+  border-color: #262626;
+  background: #262626;
+}
+.pf-shop .pf-filter-checkboxes ul li label input:checked + span svg {
+  display: block;
+}
+.pf-shop .pf-filter-btn {
+  display: none;
+}
+.pf-shop .pf-fhead-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.pf-shop .pf-fhead-category {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #000;
+}
+.pf-shop .pf-fhead-actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.pf-shop .pf-filter-sort {
+  position: relative;
+}
+.pf-shop .pf-filter-sort select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: inherit;
+  padding: 8px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+  width: 75px;
+}
+.pf-shop .pf-filter-sort span {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.pf-shop .pf-shop-layout {
+  display: flex;
+  border: 1px solid #e5e5e5;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.pf-shop .pf-layout-btn {
+  display: grid;
+  place-items: center;
+  background: none;
+  border: none;
+  color: #a3a3a3;
+  width: 46px;
+  height: 40px;
+  transition: 300ms ease;
+}
+.pf-shop .pf-layout-btn:not(:last-child) {
+  border-right: 1px solid #e5e5e5;
+}
+.pf-shop .pf-layout-btn.pf-active {
+  color: #525252;
+  background: #f5f5f5;
+}
+.pf-shop .pf-layout-btn svg {
+  width: 24px;
+}
+.pf-shop .pf-shop-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 24px;
+}
+.pf-shop .pf-shop-products[data-column="2"] {
+  grid-template-columns: repeat(2, 1fr);
+}
+.pf-shop .pf-shop-product {
+  display: block;
+}
+.pf-shop .pf-product-img {
+  width: 100%;
+  aspect-ratio: 41.4/54;
+}
+.pf-shop .pf-product-body {
+  padding-top: 16px;
+}
+.pf-shop .pf-product-name {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #171717;
+}
+.pf-shop .pf-product-price {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #525252;
+}
+.pf-shop .pf-shop-bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.pf-shop .pf-shop-loadmore button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 16px;
+  border: 1px solid #a3a3a3;
+  background: #fff;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #525252;
+}
+@media screen and (max-width: 1199px) {
+  .pf-shop .pf-shop-wrapper {
+    gap: 20px;
+  }
+  .pf-shop .pf-fhead-content {
+    margin-bottom: 24px;
+  }
+  .pf-shop .pf-shop-layout {
+    display: none;
+  }
+  .pf-shop .pf-shop-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 991px) {
+  .pf-shop {
+    padding: 80px 0;
+  }
+  .pf-shop .pf-shop-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .pf-shop .pf-shop-left {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pf-shop {
+    padding: 60px 0;
+  }
+  .pf-shop .pf-shop-products,
+  .pf-shop .pf-shop-products[data-column="2"] {
+    gap: 32px 16px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}/*# sourceMappingURL=shop.css.map */

@@ -1,0 +1,212 @@
+.pf-account {
+  font-family: "Lato", sans-serif;
+  padding: 80px 0;
+}
+.pf-account .pf-section-title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #262626;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+.pf-account .pf-account-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 24px;
+}
+.pf-account .pf-account-sidebar {
+  width: 294px;
+  background: #f5f5f5;
+}
+.pf-account .pf-sidebar-content {
+  padding: 40px 32px;
+}
+.pf-account .pf-sidebar-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pf-account .pf-sidebar-avatar {
+  position: relative;
+  margin-bottom: 8px;
+}
+.pf-account .pf-avatar-img {
+  width: 80px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pf-account .pf-avatar-btn {
+  background: #171717;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.pf-account .pf-avatar-btn * {
+  cursor: inherit;
+}
+.pf-account .pf-sidebar-name {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #171717;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.pf-account .pf-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pf-account .pf-sidebar-link {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 600;
+  padding: 8px 0;
+  color: #737373;
+  border-bottom: 1px solid #fff;
+  transition: 300ms ease;
+}
+.pf-account .pf-sidebar-link:hover {
+  color: #171717;
+}
+.pf-account .pf-sidebar-link.pf-active {
+  color: #171717;
+  border-color: #525252;
+}
+.pf-account .pf-account-content {
+  background: #fff;
+  padding: 32px;
+  box-shadow: 0px 0px 20px 0px rgba(143, 143, 143, 0.1215686275);
+}
+.pf-account .pf-order-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.pf-account .pf-order-title {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+  color: #262626;
+  text-transform: capitalize;
+}
+.pf-account .pf-order-viewAll a {
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 700;
+  color: #262626;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.pf-account .pf-order-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.pf-account .pf-order-card {
+  border: 1px solid #e5e5e5;
+  padding: 32px;
+}
+.pf-account .pf-order-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.pf-account .pf-order-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.pf-account .pf-order-img {
+  width: 80px;
+  aspect-ratio: 8/9.6;
+}
+.pf-account .pf-order-viewBtn a {
+  font-size: 12px;
+  line-height: 1.65;
+  font-weight: 700;
+  color: #262626;
+  padding: 8px 13px;
+  border: 1px solid #525252;
+}
+.pf-account .pf-order-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.pf-account .pf-order-col:last-child {
+  text-align: right;
+}
+.pf-account .pf-order-col h4 {
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 8px;
+}
+.pf-account .pf-order-col p {
+  font-size: 12px;
+  line-height: 1.65;
+  font-weight: 400;
+  color: #737373;
+}
+.pf-account .pf-order-col p[data-status=processing] {
+  color: #bf900d;
+}
+.pf-account .pf-order-col p[data-status=delivered] {
+  color: #50ab01;
+}
+.pf-account .pf-order-col p[data-status=cancelled] {
+  color: #d50000;
+}
+@media screen and (max-width: 1199px) {
+  .pf-account .pf-section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .pf-account .pf-account-wrapper {
+    gap: 16px;
+  }
+  .pf-account .pf-account-sidebar {
+    width: 280px;
+  }
+  .pf-account .pf-sidebar-content {
+    padding: 32px 24px;
+  }
+  .pf-account .pf-sidebar-name {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .pf-account .pf-sidebar-list {
+    gap: 8px;
+  }
+  .pf-account .pf-account-content {
+    padding: 24px 16px;
+  }
+  .pf-account .pf-order-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pf-account .pf-account-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .pf-account .pf-account-sidebar {
+    width: 100%;
+  }
+}/*# sourceMappingURL=account.css.map */

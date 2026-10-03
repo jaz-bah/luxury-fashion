@@ -1,0 +1,87 @@
+.pf-whyus {
+  font-family: "Lato", sans-serif;
+  background: #fff;
+  padding: 60px 0;
+}
+.pf-whyus .pf-section-content {
+  background: #171717;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.pf-whyus .pf-why-content {
+  padding: 40px 32px;
+  max-width: 1000px;
+}
+.pf-whyus .pf-section-title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+.pf-whyus .pf-section-desc {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.pf-whyus .pf-why-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 96px;
+}
+.pf-whyus .pf-why-card {
+  flex-grow: 1;
+  max-width: 180px;
+}
+.pf-whyus .pf-why-title {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.pf-whyus .pf-why-desc {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+}
+.pf-whyus .pf-why-imgbox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.pf-whyus .pf-why-img {
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+@media screen and (max-width: 1399px) {
+  .pf-whyus .pf-why-content {
+    padding: 40px 24px;
+  }
+  .pf-whyus .pf-section-title {
+    font-size: 32px;
+  }
+  .pf-whyus .pf-section-desc {
+    font-size: 16px;
+  }
+  .pf-whyus .pf-why-list {
+    gap: 32px;
+  }
+  .pf-whyus .pf-why-title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pf-whyus .pf-section-content {
+    grid-template-columns: 1fr;
+  }
+  .pf-whyus .pf-why-imgbox {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+}/*# sourceMappingURL=why-us.css.map */

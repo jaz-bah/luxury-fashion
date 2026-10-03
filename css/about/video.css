@@ -1,0 +1,79 @@
+.pf-video {
+  font-family: "Lato", sans-serif;
+}
+.pf-video .pf-video-wrapper {
+  position: relative;
+  padding: 96px 0;
+  z-index: 2;
+}
+.pf-video .pf-video-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  touch-action: none;
+}
+.pf-video .pf-video-content {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+}
+.pf-video .pf-video-title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.pf-video .pf-video-desc {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.pf-video .pf-video-callback a {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+}
+.pf-video .pf-video-callback a svg {
+  margin-top: 4px;
+  width: 24px;
+  height: 24px;
+}
+.pf-video .pf-video-callback a span {
+  border-bottom: 1px solid #fff;
+}
+@media screen and (max-width: 991px) {
+  .pf-video .pf-video-title {
+    font-size: 32px;
+  }
+  .pf-video .pf-video-desc {
+    font-size: 16px;
+  }
+  .pf-video .pf-video-callback a {
+    font-size: 16px;
+  }
+  .pf-video .pf-video-callback a svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pf-video .pf-video-wrapper {
+    padding: 80px 0;
+  }
+  .pf-video .pf-video-title {
+    font-size: 28px;
+  }
+}/*# sourceMappingURL=video.css.map */

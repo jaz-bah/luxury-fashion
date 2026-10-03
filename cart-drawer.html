@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Drawer | Luxury Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/SC-global-style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cart/cart-drawer.css" />
+  </head>
+  <body>
+    <main>
+      <button class="cart-open-btn">Open Cart</button>
+      <section>
+        <div class="pf-cart-drawer">
+          <div class="pf-cart-wrapper">
+            <div class="pf-cart-content">
+              <div class="pf-cart-header">
+                <h2 class="pf-cart-title">Shopping Cart</h2>
+                <button class="pf-cart-close">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5 1L1.5 15M1.5 1L15.5 15"
+                      stroke="#262626"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="pf-cart-body">
+                <div class="pf-cart-list">
+                  <!-- Item 01 -->
+                  <div class="pf-cart-item">
+                    <div class="pf-cart-product">
+                      <div class="pf-product-img">
+                        <div class="pf-imgbox_full">
+                          <img src="./img/cart-product.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="pf-product-text">
+                        <div class="pf-text-wrapper">
+                          <div class="pf-text-box">
+                            <h3 class="pf-heading-font pf-product-name">
+                              Tulle Long Prom Dress
+                            </h3>
+                            <p class="pf-body-font pf-product-variant">
+                              Color: Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pf-quantity-box">
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="11"
+                              height="2"
+                              viewBox="0 0 11 2"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.23047 1H10.5638"
+                                stroke="#262626"
+                                stroke-width="0.75"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="pf-quantity-input"
+                            value="1"
+                          />
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.3737 1.33594C6.3737 1.12883 6.2058 0.960938 5.9987 0.960938C5.79159 0.960938 5.6237 1.12883 5.6237 1.33594V5.6276H1.33203C1.12492 5.6276 0.957031 5.7955 0.957031 6.0026C0.957031 6.20971 1.12492 6.3776 1.33203 6.3776H5.6237V10.6693C5.6237 10.8764 5.79159 11.0443 5.9987 11.0443C6.2058 11.0443 6.3737 10.8764 6.3737 10.6693V6.3776H10.6654C10.8725 6.3776 11.0404 6.20971 11.0404 6.0026C11.0404 5.7955 10.8725 5.6276 10.6654 5.6276H6.3737V1.33594Z"
+                                fill="#262626"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pf-cart-total">
+                      <div class="pf-text-wrapper">
+                        <div class="pf-text-box">
+                          <p class="pf-body-font pf-total-price">$38.00</p>
+                        </div>
+                      </div>
+                      <div class="pf-view-more pf-cart-remove">
+                        <button>
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M17.4991 5.60937C17.4824 5.60937 17.4574 5.60937 17.4324 5.60937C13.0241 5.1677 8.62408 5.00104 4.26574 5.4427L2.56574 5.60937C2.21574 5.6427 1.90741 5.3927 1.87408 5.0427C1.84074 4.6927 2.09074 4.3927 2.43241 4.35937L4.13241 4.1927C8.56574 3.7427 13.0574 3.9177 17.5574 4.35937C17.8991 4.3927 18.1491 4.70104 18.1157 5.0427C18.0907 5.3677 17.8157 5.60937 17.4991 5.60937Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M7.08265 4.76406C7.04932 4.76406 7.01598 4.76406 6.97432 4.75573C6.64098 4.6974 6.40765 4.3724 6.46598 4.03906L6.64932 2.9474C6.78265 2.1474 6.96598 1.03906 8.90765 1.03906H11.091C13.041 1.03906 13.2243 2.18906 13.3493 2.95573L13.5326 4.03906C13.591 4.38073 13.3576 4.70573 13.0243 4.75573C12.6826 4.81406 12.3576 4.58073 12.3076 4.2474L12.1243 3.16406C12.0076 2.43906 11.9826 2.2974 11.0993 2.2974H8.91598C8.03265 2.2974 8.01598 2.41406 7.89098 3.15573L7.69932 4.23906C7.64932 4.5474 7.38265 4.76406 7.08265 4.76406Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M12.674 18.9596H7.32402C4.41569 18.9596 4.29902 17.3513 4.20735 16.0513L3.66569 7.65962C3.64069 7.31795 3.90735 7.01795 4.24902 6.99295C4.59902 6.97628 4.89069 7.23462 4.91569 7.57628L5.45735 15.9679C5.54902 17.2346 5.58235 17.7096 7.32402 17.7096H12.674C14.424 17.7096 14.4574 17.2346 14.5407 15.9679L15.0824 7.57628C15.1074 7.23462 15.4074 6.97628 15.749 6.99295C16.0907 7.01795 16.3574 7.30962 16.3324 7.65962L15.7907 16.0513C15.699 17.3513 15.5824 18.9596 12.674 18.9596Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M11.3844 14.375H8.60938C8.26771 14.375 7.98438 14.0917 7.98438 13.75C7.98438 13.4083 8.26771 13.125 8.60938 13.125H11.3844C11.726 13.125 12.0094 13.4083 12.0094 13.75C12.0094 14.0917 11.726 14.375 11.3844 14.375Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M12.0846 11.0391H7.91797C7.5763 11.0391 7.29297 10.7557 7.29297 10.4141C7.29297 10.0724 7.5763 9.78906 7.91797 9.78906H12.0846C12.4263 9.78906 12.7096 10.0724 12.7096 10.4141C12.7096 10.7557 12.4263 11.0391 12.0846 11.0391Z"
+                              fill="#525252"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 02 -->
+                  <div class="pf-cart-item">
+                    <div class="pf-cart-product">
+                      <div class="pf-product-img">
+                        <div class="pf-imgbox_full">
+                          <img src="./img/cart-product.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="pf-product-text">
+                        <div class="pf-text-wrapper">
+                          <div class="pf-text-box">
+                            <h3 class="pf-heading-font pf-product-name">
+                              Tulle Long Prom Dress
+                            </h3>
+                            <p class="pf-body-font pf-product-variant">
+                              Color: Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pf-quantity-box">
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="11"
+                              height="2"
+                              viewBox="0 0 11 2"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.23047 1H10.5638"
+                                stroke="#262626"
+                                stroke-width="0.75"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="pf-quantity-input"
+                            value="1"
+                          />
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.3737 1.33594C6.3737 1.12883 6.2058 0.960938 5.9987 0.960938C5.79159 0.960938 5.6237 1.12883 5.6237 1.33594V5.6276H1.33203C1.12492 5.6276 0.957031 5.7955 0.957031 6.0026C0.957031 6.20971 1.12492 6.3776 1.33203 6.3776H5.6237V10.6693C5.6237 10.8764 5.79159 11.0443 5.9987 11.0443C6.2058 11.0443 6.3737 10.8764 6.3737 10.6693V6.3776H10.6654C10.8725 6.3776 11.0404 6.20971 11.0404 6.0026C11.0404 5.7955 10.8725 5.6276 10.6654 5.6276H6.3737V1.33594Z"
+                                fill="#262626"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pf-cart-total">
+                      <div class="pf-text-wrapper">
+                        <div class="pf-text-box">
+                          <p class="pf-body-font pf-total-price">$38.00</p>
+                        </div>
+                      </div>
+                      <div class="pf-view-more pf-cart-remove">
+                        <button>
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M17.4991 5.60937C17.4824 5.60937 17.4574 5.60937 17.4324 5.60937C13.0241 5.1677 8.62408 5.00104 4.26574 5.4427L2.56574 5.60937C2.21574 5.6427 1.90741 5.3927 1.87408 5.0427C1.84074 4.6927 2.09074 4.3927 2.43241 4.35937L4.13241 4.1927C8.56574 3.7427 13.0574 3.9177 17.5574 4.35937C17.8991 4.3927 18.1491 4.70104 18.1157 5.0427C18.0907 5.3677 17.8157 5.60937 17.4991 5.60937Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M7.08265 4.76406C7.04932 4.76406 7.01598 4.76406 6.97432 4.75573C6.64098 4.6974 6.40765 4.3724 6.46598 4.03906L6.64932 2.9474C6.78265 2.1474 6.96598 1.03906 8.90765 1.03906H11.091C13.041 1.03906 13.2243 2.18906 13.3493 2.95573L13.5326 4.03906C13.591 4.38073 13.3576 4.70573 13.0243 4.75573C12.6826 4.81406 12.3576 4.58073 12.3076 4.2474L12.1243 3.16406C12.0076 2.43906 11.9826 2.2974 11.0993 2.2974H8.91598C8.03265 2.2974 8.01598 2.41406 7.89098 3.15573L7.69932 4.23906C7.64932 4.5474 7.38265 4.76406 7.08265 4.76406Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M12.674 18.9596H7.32402C4.41569 18.9596 4.29902 17.3513 4.20735 16.0513L3.66569 7.65962C3.64069 7.31795 3.90735 7.01795 4.24902 6.99295C4.59902 6.97628 4.89069 7.23462 4.91569 7.57628L5.45735 15.9679C5.54902 17.2346 5.58235 17.7096 7.32402 17.7096H12.674C14.424 17.7096 14.4574 17.2346 14.5407 15.9679L15.0824 7.57628C15.1074 7.23462 15.4074 6.97628 15.749 6.99295C16.0907 7.01795 16.3574 7.30962 16.3324 7.65962L15.7907 16.0513C15.699 17.3513 15.5824 18.9596 12.674 18.9596Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M11.3844 14.375H8.60938C8.26771 14.375 7.98438 14.0917 7.98438 13.75C7.98438 13.4083 8.26771 13.125 8.60938 13.125H11.3844C11.726 13.125 12.0094 13.4083 12.0094 13.75C12.0094 14.0917 11.726 14.375 11.3844 14.375Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M12.0846 11.0391H7.91797C7.5763 11.0391 7.29297 10.7557 7.29297 10.4141C7.29297 10.0724 7.5763 9.78906 7.91797 9.78906H12.0846C12.4263 9.78906 12.7096 10.0724 12.7096 10.4141C12.7096 10.7557 12.4263 11.0391 12.0846 11.0391Z"
+                              fill="#525252"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 03 -->
+                  <div class="pf-cart-item">
+                    <div class="pf-cart-product">
+                      <div class="pf-product-img">
+                        <div class="pf-imgbox_full">
+                          <img src="./img/cart-product.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="pf-product-text">
+                        <div class="pf-text-wrapper">
+                          <div class="pf-text-box">
+                            <h3 class="pf-heading-font pf-product-name">
+                              Tulle Long Prom Dress
+                            </h3>
+                            <p class="pf-body-font pf-product-variant">
+                              Color: Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pf-quantity-box">
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="11"
+                              height="2"
+                              viewBox="0 0 11 2"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.23047 1H10.5638"
+                                stroke="#262626"
+                                stroke-width="0.75"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="pf-quantity-input"
+                            value="1"
+                          />
+                          <button class="pf-quantity-btn">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.3737 1.33594C6.3737 1.12883 6.2058 0.960938 5.9987 0.960938C5.79159 0.960938 5.6237 1.12883 5.6237 1.33594V5.6276H1.33203C1.12492 5.6276 0.957031 5.7955 0.957031 6.0026C0.957031 6.20971 1.12492 6.3776 1.33203 6.3776H5.6237V10.6693C5.6237 10.8764 5.79159 11.0443 5.9987 11.0443C6.2058 11.0443 6.3737 10.8764 6.3737 10.6693V6.3776H10.6654C10.8725 6.3776 11.0404 6.20971 11.0404 6.0026C11.0404 5.7955 10.8725 5.6276 10.6654 5.6276H6.3737V1.33594Z"
+                                fill="#262626"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pf-cart-total">
+                      <div class="pf-text-wrapper">
+                        <div class="pf-text-box">
+                          <p class="pf-body-font pf-total-price">$38.00</p>
+                        </div>
+                      </div>
+                      <div class="pf-view-more pf-cart-remove">
+                        <button>
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M17.4991 5.60937C17.4824 5.60937 17.4574 5.60937 17.4324 5.60937C13.0241 5.1677 8.62408 5.00104 4.26574 5.4427L2.56574 5.60937C2.21574 5.6427 1.90741 5.3927 1.87408 5.0427C1.84074 4.6927 2.09074 4.3927 2.43241 4.35937L4.13241 4.1927C8.56574 3.7427 13.0574 3.9177 17.5574 4.35937C17.8991 4.3927 18.1491 4.70104 18.1157 5.0427C18.0907 5.3677 17.8157 5.60937 17.4991 5.60937Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M7.08265 4.76406C7.04932 4.76406 7.01598 4.76406 6.97432 4.75573C6.64098 4.6974 6.40765 4.3724 6.46598 4.03906L6.64932 2.9474C6.78265 2.1474 6.96598 1.03906 8.90765 1.03906H11.091C13.041 1.03906 13.2243 2.18906 13.3493 2.95573L13.5326 4.03906C13.591 4.38073 13.3576 4.70573 13.0243 4.75573C12.6826 4.81406 12.3576 4.58073 12.3076 4.2474L12.1243 3.16406C12.0076 2.43906 11.9826 2.2974 11.0993 2.2974H8.91598C8.03265 2.2974 8.01598 2.41406 7.89098 3.15573L7.69932 4.23906C7.64932 4.5474 7.38265 4.76406 7.08265 4.76406Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M12.674 18.9596H7.32402C4.41569 18.9596 4.29902 17.3513 4.20735 16.0513L3.66569 7.65962C3.64069 7.31795 3.90735 7.01795 4.24902 6.99295C4.59902 6.97628 4.89069 7.23462 4.91569 7.57628L5.45735 15.9679C5.54902 17.2346 5.58235 17.7096 7.32402 17.7096H12.674C14.424 17.7096 14.4574 17.2346 14.5407 15.9679L15.0824 7.57628C15.1074 7.23462 15.4074 6.97628 15.749 6.99295C16.0907 7.01795 16.3574 7.30962 16.3324 7.65962L15.7907 16.0513C15.699 17.3513 15.5824 18.9596 12.674 18.9596Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M11.3844 14.375H8.60938C8.26771 14.375 7.98438 14.0917 7.98438 13.75C7.98438 13.4083 8.26771 13.125 8.60938 13.125H11.3844C11.726 13.125 12.0094 13.4083 12.0094 13.75C12.0094 14.0917 11.726 14.375 11.3844 14.375Z"
+                              fill="#525252"
+                            />
+                            <path
+                              d="M12.0846 11.0391H7.91797C7.5763 11.0391 7.29297 10.7557 7.29297 10.4141C7.29297 10.0724 7.5763 9.78906 7.91797 9.78906H12.0846C12.4263 9.78906 12.7096 10.0724 12.7096 10.4141C12.7096 10.7557 12.4263 11.0391 12.0846 11.0391Z"
+                              fill="#525252"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item End -->
+                </div>
+              </div>
+              <div class="pf-cart-footer">
+                <div class="pf-cart-summary">
+                  <div class="pf-summary-list">
+                    <div class="pf-summary-item">
+                      <p>Subtotal</p>
+                      <p>$1234.00</p>
+                    </div>
+                    <div class="pf-summary-item">
+                      <h3>Total</h3>
+                      <h3>$1345.00</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="pf-cart-action">
+                  <div class="pf-view-more pf-cart-checkoutBtn">
+                    <a href="#"> Checkout </a>
+                  </div>
+                  <div class="pf-view-more pf-cart-cartBtn">
+                    <a href="./cart.html"> View Cart </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/cart/cart-drawer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+.pf-wscollections {
+  padding-bottom: 100px;
+}
+
+.pf-wscollections .pf-wscollections-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  gap: 20px 40px;
+}
+
+.pf-wscollections .pf-wscollections-title {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pf-wscollections .pf-wscollections-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.pf-wscollections .pf-wscollections-nav button {
+  display: block;
+  width: 48px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  border: none;
+  cursor: pointer;
+}
+
+.pf-wscollections .pf-wscollections-nav svg path {
+  transition: all 300ms ease;
+}
+
+.pf-wscollections .pf-wscollections-nav .swiper-button-disabled svg path {
+  fill: #d4d4d4;
+}
+
+.pf-wscollections .pf-wscollections-nav button * {
+  cursor: inherit;
+}
+
+.pf-wscollections .pf-wscollections-nav .swiper-button-disabled {
+  cursor: default;
+}
+
+.pf-wscollections .pf-wscollections-img {
+  width: 100%;
+  aspect-ratio: 4.1/5.4;
+  margin-bottom: 16px;
+}
+
+.pf-wscollections .pf-wscollections-name {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #171717;
+}
+
+.pf-wscollections .pf-wscollections-price {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #525252;
+}
+
+@media screen and (max-width: 1799px) {
+  .pf-wscollections .pf-wscollections-title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .pf-wscollections .pf-wscollections-title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pf-wscollections .pf-wscollections-nav {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-wscollections .pf-wscollections-title {
+    font-size: 24px;
+  }
+
+  .pf-wscollections .pf-wscollections-nav button {
+    width: 44px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pf-wscollections .pf-wscollections-head {
+    margin-bottom: 36px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pf-wscollections .pf-wscollections-title {
+    font-size: 22px;
+  }
+}

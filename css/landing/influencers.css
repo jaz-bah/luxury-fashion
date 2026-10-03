@@ -1,0 +1,74 @@
+.pf-influencers {
+  padding: 80px 0 70px;
+  background: #f2f6f0;
+}
+
+.pf-influencers .pf-influencers-heading {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 36px;
+  justify-content: center;
+}
+
+.pf-influencers .pf-influencers-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.pf-influencers .pf-influencers-card {
+  width: 100%;
+  aspect-ratio: 4.1/5;
+}
+
+@media screen and (max-width: 1399px) {
+  .pf-influencers .pf-influencers-heading {
+    text-align: center;
+    max-width: 500px;
+    text-wrap: balance;
+    margin: 0 auto 36px;
+  }
+
+  .pf-influencers .pf-influencers-content {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .pf-influencers .pf-influencers-heading {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pf-influencers .pf-influencers-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-influencers {
+    padding: 70px 0;
+  }
+
+  .pf-influencers .pf-influencers-heading {
+    font-size: 32px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pf-influencers .pf-influencers-heading {
+    font-size: 28px;
+    max-width: 320px;
+  }
+
+  .pf-influencers .pf-influencers-content {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+  }
+}

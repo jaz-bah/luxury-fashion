@@ -1,0 +1,145 @@
+.pf-hero {
+  min-height: 100svh;
+  background: linear-gradient(#0000, #000),
+    url(../img/hero-bg.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.pf-hero .pf-hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 96px;
+  padding-top: 240px;
+  gap: 40px;
+}
+
+.pf-hero .pf-hero-left {
+  padding-bottom: 28px;
+}
+
+.pf-hero .pf-hero-collection {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.pf-hero .pf-hero-callback a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  padding: 14px 16px;
+  border: 1px solid #a3a3a3;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pf-hero .pf-hero-callback a img {
+  width: 16px;
+}
+
+.pf-hero .pf-hero-right {
+  max-width: 580px;
+}
+
+.pf-hero .pf-hero-title {
+  color: #fff;
+  font-family: "Arkhip", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.pf-hero .pf-hero-description {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1799px) {
+  .pf-hero .pf-hero-collection {
+    font-size: 22px;
+  }
+
+  .pf-hero .pf-hero-right {
+    max-width: 485px;
+  }
+
+  .pf-hero .pf-hero-title {
+    font-size: 44px;
+  }
+
+  .pf-hero .pf-hero-description {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .pf-hero .pf-hero-left {
+    padding-bottom: 0;
+    max-width: 300px;
+  }
+
+  .pf-hero .pf-hero-title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pf-hero .pf-hero-collection {
+    font-size: 20px;
+  }
+
+  .pf-hero .pf-hero-title {
+    font-size: 22px;
+  }
+
+  .pf-hero .pf-hero-description {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pf-hero .pf-hero-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+    padding-top: 140px;
+  }
+
+  .pf-hero .pf-hero-left {
+    text-align: center;
+  }
+
+  .pf-hero .pf-hero-collection {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .pf-hero .pf-hero-callback a {
+    font-size: 14px;
+  }
+
+  .pf-hero .pf-hero-right {
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .pf-hero .pf-hero-title {
+    font-size: 20px;
+  }
+
+  .pf-hero .pf-hero-description {
+    font-size: 17px;
+    justify-content: center;
+  }
+}

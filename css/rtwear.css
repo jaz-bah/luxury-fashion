@@ -1,0 +1,89 @@
+.pf-callback-banner {
+  background: url(../img/ready-to-wear.jpg) no-repeat center center / cover;
+}
+
+.pf-callback-banner .pf-rtwear-overlay {
+  background: linear-gradient(#0000, #000);
+  padding: clamp(240px, 30vw, 580px) 0 80px;
+}
+
+.pf-callback-banner .pf-rtwear-content {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pf-callback-banner .pf-rtwear-title {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.pf-callback-banner .pf-rtwear-desc {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 36px;
+}
+
+.pf-callback-banner .pf-rtwear-btn {
+  display: flex;
+  gap: 36px;
+}
+
+.pf-callback-banner .pf-rtwear-btn a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  padding: 14px 16px;
+  border: 1px solid #a3a3a3;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .pf-callback-banner .pf-rtwear-title {
+    font-size: 32px;
+  }
+
+  .pf-callback-banner .pf-rtwear-desc {
+    font-size: 18px;
+  }
+
+  .pf-callback-banner .pf-rtwear-btn {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pf-callback-banner .pf-rtwear-title {
+    font-size: 24px;
+  }
+
+  .pf-callback-banner .pf-rtwear-desc {
+    font-size: 16px;
+  }
+
+  .pf-callback-banner .pf-rtwear-btn {
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .pf-callback-banner .pf-rtwear-callback a {
+    font-size: 16px;
+  }
+}

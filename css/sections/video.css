@@ -1,0 +1,181 @@
+.pf-video-section {
+  width: 100%;
+}
+
+.pf-video-section button * {
+  cursor: inherit;
+}
+
+.pf-video-section * {
+  font-family: "Lato", sans-serif;
+}
+
+.pf-video-section .pf-video-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pf-video-section .pf-section-top {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.pf-video-section .pf-section-title {
+  max-width: 700px;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #262626;
+}
+
+.pf-video-section .pf-section-desc {
+  max-width: 733px;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #525252;
+}
+
+.pf-video-section .pf-video-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 17 / 7;
+  min-height: 240px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.pf-video-section .pf-video-content video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pf-video-section .pf-video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000052;
+  transition: 300ms ease-in-out;
+}
+
+.pf-video-section .pf-video-content.pf-video-playing .pf-video-overlay {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pf-video-section .pf-video-content.pf-video-playing:hover .pf-video-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pf-video-section .pf-video-toggle {
+  width: clamp(48px, 8vw, 120px);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  border: 2px solid #fff;
+  background: #ffffff4d;
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pf-video-section .pf-video-toggle img {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: block;
+  width: 75%;
+  height: 75%;
+  opacity: 0;
+  transform: scale(0.5) rotate(15deg);
+  transition: 200ms ease-in-out;
+}
+
+.pf-video-section .pf-video-toggle .pf-video-play,
+.pf-video-section .pf-video-content.pf-video-playing .pf-video-pause {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.pf-video-section .pf-video-content.pf-video-playing .pf-video-play {
+  opacity: 0;
+  transform: scale(0.5) rotate(15deg);
+}
+
+.pf-video-section .pf-video-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.pf-video-section .pf-video-btn a {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #fff;
+  background: #737373;
+  border: 1px solid #d4d4d4;
+  padding: 14px 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.pf-video-section .pf-video-btn a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+.pf-video-section .pf-video-btn a span svg {
+  width: 100%;
+  height: 100%;
+}
+
+.pf-video-section .pf-video-btn a span svg path {
+  fill: currentColor;
+}
+
+@media screen and (max-width: 1199px) {
+  .pf-video-section .pf-section-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-video-section .pf-section-top {
+    margin-bottom: 40px;
+  }
+
+  .pf-video-section .pf-section-title {
+    font-size: 28px;
+  }
+
+  .pf-video-section .pf-section-desc {
+    font-size: 16px;
+  }
+
+  .pf-video-section .pf-video-btn a {
+    font-size: 16px;
+  }
+
+  .pf-video-section .pf-video-content {
+    aspect-ratio: 16 / 9;
+  }
+}

@@ -1,0 +1,141 @@
+.pf-process {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.pf-process .pf-process-heading {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000;
+  justify-content: center;
+  max-width: 490px;
+  margin-inline: auto;
+  margin-bottom: 48px;
+}
+
+.pf-process .pf-process-wrapper {
+  max-width: 1436px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 24px;
+}
+
+.pf-process .pf-process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 0;
+}
+
+.pf-process .pf-process-card {
+  padding: 24px 36px;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.pf-process .pf-process-number {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #324b4e80;
+}
+
+.pf-process .pf-process-title {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.pf-process .pf-process-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000000;
+  max-width: 360px;
+}
+
+.pf-process .pf-process-img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .pf-process .pf-process-heading {
+    font-size: 36px;
+    text-wrap: balance;
+  }
+
+  .pf-process .pf-process-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pf-process .pf-process-card {
+    padding: 20px 24px;
+  }
+
+  .pf-process .pf-process-number {
+    font-size: 36px;
+  }
+
+  .pf-process .pf-process-title {
+    font-size: 20px;
+  }
+
+  .pf-process .pf-process-desc {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-process {
+    padding: 60px 0 70px;
+  }
+
+  .pf-process .pf-process-heading {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .pf-process .pf-process-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .pf-process .pf-process-list {
+    gap: 16px;
+  }
+
+  .pf-process .pf-process-card {
+    padding: 16px 20px;
+    gap: 12px;
+  }
+
+  .pf-process .pf-process-number {
+    font-size: 24px;
+  }
+
+  .pf-process .pf-process-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .pf-process .pf-process-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pf-process .pf-process-heading {
+    font-size: 28px;
+    max-width: 320px;
+  }
+}

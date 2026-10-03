@@ -1,0 +1,202 @@
+.pf-terms {
+  --padding-top: 128px;
+  --padding-bottom: 128px;
+  --max-width: 943px;
+}
+
+.pf-terms * {
+  font-family: "Lato", sans-serif;
+}
+
+.pf-terms .pf-terms-wrapper {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+
+.pf-terms .pf-terms-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.pf-terms .pf-section-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pf-terms .pf-section-title {
+  font-family: "Arkhip", sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+.pf-terms .pf-terms-content {
+  width: 100%;
+}
+
+.pf-terms .pf-terms-content h3 {
+  font-size: 28px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.pf-terms .pf-terms-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #262626;
+  margin-bottom: 56px;
+}
+
+.pf-terms .pf-terms-content ul {
+  margin-bottom: 56px;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+  gap: 24px;
+}
+
+.pf-terms .pf-terms-content ul li {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000000;
+}
+
+.pf-terms .pf-terms-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pf-terms .pf-terms-ftitle {
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pf-terms .pf-terms-fbtn a {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #fff;
+  background: #737373;
+  border: 1px solid #d4d4d4;
+  padding: 14px 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.pf-terms .pf-terms-fbtn a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+.pf-terms .pf-terms-fbtn a span svg {
+  width: 100%;
+  height: 100%;
+}
+
+.pf-terms .pf-terms-fbtn a span svg path {
+  fill: currentColor;
+}
+
+@media screen and (max-width: 991px) {
+  .pf-terms {
+    --padding-top: 96px;
+    --padding-bottom: 96px;
+  }
+
+  .pf-terms .pf-section-title {
+    font-size: 44px;
+    margin-bottom: 48px;
+  }
+
+  .pf-terms .pf-terms-content h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .pf-terms .pf-terms-content p {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .pf-terms .pf-terms-content ul {
+    margin-bottom: 32px;
+    gap: 16px;
+  }
+
+  .pf-terms .pf-terms-content ul li {
+    font-size: 18px;
+  }
+
+  .pf-terms .pf-terms-ftitle {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .pf-terms .pf-terms-fbtn a {
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pf-terms {
+    --padding-top: 80px;
+    --padding-bottom: 80px;
+  }
+
+  .pf-terms .pf-section-title {
+    font-size: 32px;
+  }
+
+  .pf-terms .pf-terms-content h3 {
+    font-size: 22px;
+  }
+
+  .pf-terms .pf-terms-content p {
+    font-size: 16px;
+  }
+
+  .pf-terms .pf-terms-content ul {
+    margin-bottom: 24px;
+  }
+
+  .pf-terms .pf-terms-content ul li {
+    font-size: 16px;
+  }
+
+  .pf-terms .pf-terms-ftitle {
+    font-size: 20px;
+    padding-top: 12px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .pf-terms .pf-terms-content h3 {
+    font-size: 20px;
+  }
+
+  .pf-terms .pf-terms-ftitle {
+    font-size: 18px;
+  }
+}

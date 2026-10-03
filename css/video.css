@@ -1,0 +1,65 @@
+.pf-video-banner {
+  position: relative;
+}
+
+.pf-video-banner .pf-video-cover {
+  width: 100%;
+  aspect-ratio: 5/2;
+  min-height: 280px;
+}
+
+.pf-video-banner .pf-video-cover video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pf-video-banner .pf-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(64px, 8vw, 140px);
+  aspect-ratio: 1/1;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  backdrop-filter: blur(8px);
+  transition: 300ms ease;
+}
+
+.pf-video-banner .pf-video-play.video-playing {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pf-video-banner:hover .pf-video-play.video-playing {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pf-video-banner .pf-video-play .pause-icon,
+.pf-video-banner .pf-video-play.video-playing .play-icon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pf-video-banner .pf-video-play.video-playing .pause-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pf-video-banner .pf-video-play img {
+  display: block;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  transition: 300ms ease;
+  width: 52%;
+  cursor: pointer;
+}

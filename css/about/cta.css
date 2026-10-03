@@ -1,0 +1,70 @@
+.pf-cta {
+  font-family: "Lato", sans-serif;
+}
+.pf-cta .pf-cta-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.pf-cta .pf-cta-img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.pf-cta .pf-cta-overlay {
+  min-height: 650px;
+  display: grid;
+  place-items: center;
+  padding: 80px 0;
+  background: rgba(0, 0, 0, 0.3803921569);
+}
+.pf-cta .pf-cta-content {
+  max-width: 934px;
+  text-align: center;
+}
+.pf-cta .pf-cta-title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.pf-cta .pf-cta-desc {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.pf-cta .pf-cta-callback a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  padding: 14px 16px;
+  border: 1px solid #a3a3a3;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+}
+@media screen and (max-width: 991px) {
+  .pf-cta .pf-cta-overlay {
+    min-height: 500px;
+  }
+  .pf-cta .pf-cta-content {
+    max-width: 800px;
+  }
+  .pf-cta .pf-cta-title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pf-cta .pf-cta-title {
+    font-size: 24px;
+  }
+  .pf-cta .pf-cta-desc {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=cta.css.map */

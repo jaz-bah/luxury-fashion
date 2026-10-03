@@ -1,0 +1,398 @@
+.pf-cart {
+  font-family: "Lato", sans-serif;
+  padding: 100px 0;
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
+
+    * {
+      cursor: inherit;
+    }
+  }
+
+  .pf-cart-content {
+    max-width: 905px;
+    margin: 0 auto;
+  }
+
+  .pf-cart-head {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pf-cart-title {
+    font-family: "Arkhip", sans-serif;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+    color: #171717;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .pf-cart-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pf-cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+
+    tr {
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    th {
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 600;
+      color: #171717;
+      text-align: left;
+      padding-bottom: 32px;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    td {
+      padding: 32px 0;
+    }
+  }
+
+  .pf-cart-product {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+  }
+
+  .pf-product {
+    &-img {
+      width: 80px;
+      aspect-ratio: 80/96;
+
+      img {
+        object-position: top;
+      }
+    }
+
+    &-text {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-name {
+      font-size: 14px;
+      line-height: 1.55;
+      font-weight: 700;
+      color: #262626;
+      margin-bottom: 8px;
+    }
+
+    &-variant {
+      font-size: 12px;
+      line-height: 1.65;
+      font-weight: 400;
+      color: #737373;
+      margin-bottom: 8px;
+    }
+
+    &-remove {
+      margin-top: auto;
+
+      button {
+        display: block;
+        background: none;
+        outline: none;
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+
+  .pf-cart-quantity {
+    padding: 0 16px;
+  }
+
+  .pf-quantity {
+    &-box {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      width: 80px;
+      border: 1px solid #525252;
+      padding: 6px 4px;
+      border-radius: 4px;
+    }
+    &-btn {
+      width: 20px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+    &-input {
+      font-family: inherit;
+      display: block;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.65;
+      font-weight: 700;
+      color: #262626;
+      pointer-events: none;
+    }
+  }
+
+  .pf-cart-total {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .pf-total-price {
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 700;
+    color: #262626;
+  }
+
+  .pf-cart-continueBtn {
+    margin-bottom: 40px;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      background: #737373;
+      border: 1px solid #d4d4d4;
+      color: #fff;
+      padding: 14px 16px;
+      gap: 6px;
+      font-size: 18px;
+      line-height: 1.45;
+      font-weight: 400;
+      transition: 300ms ease;
+
+      &:hover {
+        background: #525252;
+      }
+    }
+  }
+
+  .pf-cart-footer {
+    background: #f5f5f5;
+    padding: 24px 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+
+  .pf-cart-note {
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+
+    label {
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+      color: #141718;
+      margin-bottom: 13px;
+    }
+
+    textarea {
+      font-family: inherit;
+      min-height: 136px;
+      height: 100%;
+      background: none;
+      border: 1px solid #d4d4d4;
+      outline: none;
+      resize: none;
+      cursor: text;
+      padding: 10px;
+      font-size: 15px;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+  }
+
+  .pf-summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+      color: #141718;
+
+      &:last-child {
+        text-align: right;
+        font-weight: 700;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 1.6;
+      font-weight: 700;
+      color: #171717;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+
+  .pf-cart-checkoutBtn {
+    margin-top: 32px;
+
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      background: #171717;
+      font-size: 18px;
+      line-height: 1.75;
+      font-weight: 700;
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .pf-cart-title {
+      font-size: 48px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .pf-cart-footer {
+      gap: 32px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 80px 0;
+
+    .pf-cart-title {
+      font-size: 36px;
+    }
+
+    .pf-cart-footer {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .pf-cart-note {
+      padding-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 60px 0;
+
+    .pf-cart-title {
+      font-size: 32px;
+    }
+
+    .pf-cart-table {
+      margin-bottom: 32px;
+
+      th {
+        font-size: 16px;
+        padding-bottom: 20px;
+      }
+
+      td {
+        padding: 20px 0;
+      }
+    }
+
+    .pf-cart-product {
+      gap: 8px;
+    }
+
+    .pf-product {
+      &-img {
+        width: 60px;
+        aspect-ratio: 60/72;
+      }
+    }
+
+    .pf-cart-quantity {
+      padding: 0 12px;
+    }
+
+    .pf-quantity {
+      &-box {
+        width: 72px;
+        padding: 4px 2px;
+      }
+    }
+
+    .pf-cart-continueBtn {
+      margin-bottom: 32px;
+
+      a {
+        padding: 12px 14px;
+        font-size: 16px;
+
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+
+    .pf-cart-footer {
+      padding: 16px;
+      gap: 20px;
+    }
+
+    .pf-cart-note {
+      label {
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+    }
+
+    .pf-summary-item {
+      padding: 10px 0;
+
+      p {
+        font-size: 15px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+    }
+
+    .pf-cart-checkoutBtn {
+      margin-top: 20px;
+
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}

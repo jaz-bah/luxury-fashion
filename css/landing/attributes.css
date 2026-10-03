@@ -1,0 +1,145 @@
+.pf-attributes {
+  background: #f2f6f0;
+  padding: 80px 0;
+}
+
+.pf-attributes .pf-attributes-content {
+  max-width: 1436px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 286px;
+}
+
+.pf-attributes .pf-attributes-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px 190px;
+}
+
+.pf-attributes .pf-attributes-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pf-attributes .pf-attributes-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #344d50;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.pf-attributes .pf-attributes-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pf-attributes .pf-attributes-type {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.pf-attributes .pf-attributes-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.pf-attributes .pf-attributes-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000;
+  font-style: italic;
+}
+
+.pf-attributes .pf-attributes-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1799px) {
+  .pf-attributes .pf-attributes-list {
+    gap: 70px 120px;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .pf-attributes .pf-attributes-content {
+    gap: 100px;
+    align-items: center;
+  }
+
+  .pf-attributes .pf-attributes-list {
+    gap: 36px;
+  }
+
+  .pf-attributes .pf-attributes-type {
+    font-size: 24px;
+  }
+
+  .pf-attributes .pf-attributes-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pf-attributes .pf-attributes-content {
+    grid-template-columns: 5fr 4fr;
+    gap: 32px;
+  }
+
+  .pf-attributes .pf-attributes-type {
+    font-size: 20px;
+  }
+
+  .pf-attributes .pf-attributes-title {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-attributes .pf-attributes-content {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .pf-attributes .pf-attributes-img {
+    width: 90%;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pf-attributes {
+    padding: 60px 0;
+  }
+
+  .pf-attributes .pf-attributes-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .pf-attributes .pf-attributes-card {
+    max-width: 240px;
+    margin: auto;
+  }
+
+  .pf-attributes .pf-attributes-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,199 @@
+.pf-callback {
+  background: #172d31;
+  position: relative;
+}
+
+.pf-callback .pf-callback-content {
+  max-width: 1436px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 8fr;
+  gap: 80px;
+}
+
+.pf-callback .pf-callback-left {
+  padding: 130px 0;
+}
+
+.pf-callback .pf-callback-title {
+  font-family: "Cinzel", serif;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.pf-callback .pf-callback-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.pf-callback .pf-callback-btn a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 14px 16px;
+  border: 2px solid #fff;
+  background: transparent;
+  transition: 300ms ease;
+}
+
+.pf-callback .pf-callback-btn a img {
+  width: 16px;
+  transition: 300ms ease;
+}
+
+.pf-callback .pf-callback-btn a:hover {
+  background: #fff;
+  color: #172d31;
+}
+
+.pf-callback .pf-callback-btn a:hover img {
+  filter: invert(1);
+}
+
+.pf-callback .pf-callback-right {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: clamp(500px, 50%, 840px);
+  height: 100%;
+  display: flex;
+}
+
+.pf-callback .pf-callback-img {
+  width: 100%;
+  height: 100%;
+}
+
+.pf-callback .pf-callback-marquee {
+  width: 90px;
+  background: #324b4e;
+  flex-shrink: 0;
+  padding: 0 23px;
+
+  --gap: 52px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.pf-callback .pf-callback-mcontent {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100%;
+  gap: var(--gap);
+  animation: scrollY 8s linear infinite;
+}
+
+@keyframes scrollY {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .pf-callback .pf-callback-left {
+    padding: 100px 0;
+  }
+
+  .pf-callback .pf-callback-title {
+    font-size: 40px;
+  }
+
+  .pf-callback .pf-callback-btn a {
+    font-size: 16px;
+  }
+
+  .pf-callback .pf-callback-btn a img {
+    width: 14px;
+  }
+
+  .pf-callback .pf-callback-marquee {
+    width: 70px;
+    padding: 0 18px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .pf-callback .pf-callback-content {
+    grid-template-columns: 4fr 5fr;
+    gap: 40px;
+  }
+
+  .pf-callback .pf-callback-left {
+    padding: 80px 0;
+  }
+
+  .pf-callback .pf-callback-title {
+    font-size: 32px;
+    text-wrap: balance;
+  }
+
+  .pf-callback .pf-callback-desc {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pf-callback .pf-callback-right {
+    width: clamp(340px, 50%, 520px);
+  }
+
+  .pf-callback .pf-callback-marquee {
+    width: 60px;
+    padding: 0 15px;
+  }
+
+  .pf-callback .pf-callback-title {
+    font-size: 28px;
+  }
+
+  .pf-callback .pf-callback-desc {
+    margin-bottom: 32px;
+  }
+
+  .pf-callback .pf-callback-btn a {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .pf-callback .pf-callback-btn a img {
+    width: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-callback .pf-callback-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .pf-callback .pf-callback-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .pf-callback .pf-callback-right {
+    display: none;
+  }
+}

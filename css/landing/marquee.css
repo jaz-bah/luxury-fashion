@@ -1,0 +1,78 @@
+.pf-marquee {
+  --gap: 48px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  background: #172d31;
+  padding: 32px 0;
+}
+
+.pf-marquee .pf-marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  animation: scroll 16s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.pf-marquee .pf-marquee-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.pf-marquee .pf-marquee-icon {
+  width: 34px;
+}
+
+.pf-marquee .pf-marquee-text {
+  font-family: "Cinzel", serif;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1199px) {
+  .pf-marquee {
+    padding: 26px 0;
+  }
+
+  .pf-marquee .pf-marquee-item {
+    gap: 16px;
+  }
+
+  .pf-marquee .pf-marquee-icon {
+    width: 30px;
+  }
+
+  .pf-marquee .pf-marquee-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-marquee {
+    padding: 22px 0;
+  }
+
+  .pf-marquee .pf-marquee-text {
+    font-size: 20px;
+  }
+
+  .pf-marquee .pf-marquee-content {
+    animation-duration: 12s;
+  }
+}
